@@ -62,7 +62,7 @@ primary_data$activity_label <- activity_label[as.character(primary_data$activity
 # convert the activity column to factor
 primary_data$activity_label <- as.factor(primary_data$activity_label)
 # save tidy primary data to file
-write.table(x = primary_data, file = "primary_data.txt")
+write.table(x = primary_data, file = "primary_data.txt", append = FALSE, row.names = FALSE)
 # save tidy primary data's label to file
 write.table(x = names(primary_data), file = "primary_label.txt", quote = FALSE, 
             append = FALSE, row.names = FALSE, col.names = FALSE)
@@ -78,7 +78,7 @@ df_reduced <- tbl_df(data = primary_data)
 df_reduced_group <- group_by(df_reduced, activity_label, subject)
 secondary_data <- summarise_each(df_reduced_group, funs(mean))
 # save tidy second data to file
-write.table(x = secondary_data, file = "second_data.txt")
+write.table(x = secondary_data, file = "secondary_data.txt", append = FALSE, row.names = FALSE)
 # save tidy second data's label to file
 write.table(x = names(secondary_data), file = "secondary_label.txt", quote = FALSE, 
             append = FALSE, row.names = FALSE, col.names = FALSE)

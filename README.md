@@ -1,15 +1,18 @@
-====================================================================
+==================================================================
 A tidy version of 
-====================================================================    
-    Human Activity Recognition Using Smartphones Dataset Version 1.0
-    ================================================================
+    ==============================================================
+    Human Activity Recognition Using Smartphones Dataset
+    Version 1.0
+    ==============================================================
     Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
     Smartlab - Non Linear Complex Systems Laboratory
     DITEN - Universit?degli Studi di Genova.
     Via Opera Pia 11A, I-16145, Genoa, Italy.
     activityrecognition@smartlab.ws
     www.smartlab.ws
-====================================================================
+    ==============================================================
+Choo C.Y.
+==================================================================
 
 There are 561 features vector in the original dataset. The original databset consists of 2 parts, training and testing set. They can be found in folder "UCI HAR Dataset". Full list of features can be found in "UCI HAR Dataset/features.txt" and their information can be found in "UCI HAR Dataset/features_info.txt".
 
